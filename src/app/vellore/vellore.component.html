@@ -1,0 +1,28 @@
+<div class="container-fluid">
+  <div class="row my-1">
+    <div
+      *ngFor="let place of selectedpalces"
+      class="col-12 col-sm-12 col-md-6 col-lg-3"
+    >
+      <div class="card my-1">
+        <img [src]="place.img" [alt]="place.altname" class="card-img-top" />
+        <div class="card-body">
+          <div class="card-title">
+            <h4>{{ place.title | titlecase }}</h4>
+          </div>
+          <div class="card-text">
+            <p>
+              {{ place.text | titlecase }}
+            </p>
+          </div>
+          <button class=" mx-1" mat-icon-button color="warn">
+            <mat-icon>favorite </mat-icon>
+          </button>
+          <button class="" mat-icon-button color="link">
+            <mat-icon>share</mat-icon>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

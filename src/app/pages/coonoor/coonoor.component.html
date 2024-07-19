@@ -1,0 +1,119 @@
+<div class="container-fluid">
+  <div class="row my-1">
+    <div
+      *ngFor="let place of places"
+      class="col-12 col-sm-12 col-md-6 col-lg-3"
+    >
+      <div class="card my-1 border-secondary shadow">
+        <img
+          [src]="place.img"
+          [alt]="place.altname"
+          class="card-img-top dark-mode-img"
+        />
+        <div class="card-body content-text">
+          <div class="card-title content-title">
+            <h6>{{ place.title | titlecase }}</h6>
+          </div>
+          <div class="card-text" style="font-size: 13px">
+            <p>{{ place.text | titlecase }}</p>
+          </div>
+
+          <button
+            class="mx-1 btn"
+            [ngClass]="{
+              'btn-outline-danger' : !place.isLiked,
+              'btn-danger' : place.isLiked,
+            }"
+            (click)="likedPlaces(place)"
+          >
+            <i class="fa-solid fa-heart"></i>
+          </button>
+
+          <button
+        class="btn btn-outline-success"
+        data-toggle="modal"
+        data-target="#shareModal"
+        (click)="openShareModal()"
+      >
+        <i class="fa-solid fa-share-nodes"></i>
+      </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div
+  class="modal fade"
+  id="shareModal"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="shareModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+    <div class="modal-content bg-light shadow">
+      <div class="modal-header">
+        <h5 class="modal-title" id="shareModalLabel">Share via</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-dismiss="modal"
+          aria-label="Close"
+          (click)="closeShareModal()"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col">
+            <button class="btn btn-outline-light border-0">
+              <a href="https://web.whatsapp.com/">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/800px-WhatsApp.svg.png"
+                  alt="WhatsApp Logo"
+                  style="height: 35px; width: 35px"
+                />
+              </a>
+            </button>
+          </div>
+          <div class="col">
+            <button class="btn btn-outline-light border-0">
+              <a href="https://www.instagram.com/accounts/login/">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png"
+                  alt="Instagram Logo"
+                  style="height: 30px; width: 30px"
+                />
+              </a>
+            </button>
+          </div>
+          <div class="col">
+            <button class="btn btn-outline-light border-0">
+              <a href="https://www.google.com/gmail/about/">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/2560px-Gmail_icon_%282020%29.svg.png"
+                  alt="Gmail Logo"
+                  style="height: 30px; width: 30px"
+                />
+              </a>
+            </button>
+          </div>
+          <div class="col">
+            <button class="btn btn-outline-light border-0">
+              <a href="https://twitter.com/i/flow/login">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/512px-Logo_of_Twitter.svg.png"
+                  alt="Twitter Logo"
+                  style="height: 30px; width: 30px"
+                />
+              </a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

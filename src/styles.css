@@ -1,0 +1,58 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~bootstrap/dist/css/bootstrap.css";
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@import '~@fortawesome/fontawesome-free/css/all.css';
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+*,
+*::before,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-bg: white;
+    --color-text: black;
+}
+
+[data-theme="dark"]{ 
+    --color-bg: #272728;
+    --color-text: rgb(207, 200, 200);
+    --color-title: rgb(241, 238, 238);
+    --opacity-img: 0.7;
+}
+
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-self: start;
+    align-self: self-start;
+    background-color: var(--color-bg);
+  }
+  
+  .content-title{
+    color: var(--color-title)
+  }
+
+  .content-text{
+    color: var(--color-text);
+  }
+
+  .dark-mode-img{
+    opacity: var(--opacity-img);
+  }
+  
+  .card{
+    background-color: var(--color-bg);
+  }
+
+  .scroll-container::-webkit-scrollbar{
+    display: none;
+  }

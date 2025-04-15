@@ -804,4 +804,65 @@ export class PlacesService {
     ]
   }
 
+  AriyalurPlace(){
+    return [
+      {
+        id: 105,
+        title: 'abhimugesvarar Temple',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, necessitatibus?',
+        img: '../../../assets/images/ariyalur/abhimugesvararTemple.jpg',
+        altname:  'abhimugesvararTemple',
+      },
+      {
+        id: 106,
+        title: 'Aiyarappar Temple',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, necessitatibus?',
+        img: '../../../assets/images/ariyalur/AiyarapparTemple.jpg',
+        altname:  'AiyarapparTemple',
+      },
+      {
+        id: 107,
+        title: 'Brahmapureeswara Temple',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, necessitatibus?',
+        img: '../../../assets/images/ariyalur/brahmapureeswarar-temple.jpg',
+        altname:  'brahmapureeswarar-temple',
+      },
+      {
+        id: 108,
+        title: 'Chandra Sthalalm Thingalur',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, necessitatibus?',
+        img: '../../../assets/images/ariyalur/chandraSthalalmThingalur.jpg',
+        altname:  'chandraSthalalmThingalur',
+      },
+      {
+        id: 109,
+        title: 'ezhuthari Nathar Temple',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, necessitatibus?',
+        img: '../../../assets/images/ariyalur/ezhuthariNatharTemple.jpg',
+        altname:  'ezhuthariNatharTemple',
+      },
+      {
+        id: 110,
+        title: 'Kalyanasundareshwarar',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, necessitatibus?',
+        img: '../../../assets/images/ariyalur/sri-kalyanasundareshwarar.jpg',
+        altname:  'kalyanasundareshwarar',
+      },
+      {
+        id: 111,
+        title: 'Sri Neyyadiappar Temple',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, necessitatibus?',
+        img: '../../../assets/images/ariyalur/sriNeyyadiapparTemple.jpg',
+        altname:  'sriNeyyadiapparTemple',
+      },
+      {
+        id: 112,
+        title: 'Swaminatha Swami Temple',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, necessitatibus?',
+        img: '../../../assets/images/ariyalur/swaminathaSwamiTemple.jpg',
+        altname:  'swaminathaSwamiTemple',
+      },
+    ]
+  }
+
 }

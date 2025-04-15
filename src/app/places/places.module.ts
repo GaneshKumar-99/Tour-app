@@ -17,6 +17,7 @@ import { SalemComponent } from '../pages/salem/salem.component';
 import { NagapattinamComponent } from '../pages/nagapattinam/nagapattinam.component';
 import { DindigulComponent } from '../pages/dindigul/dindigul.component';
 import { ThoothukudiComponent } from '../pages/thoothukudi/thoothukudi.component';
+import { AriyalurComponent } from '../pages/ariyalur/ariyalur.component';
 
 const routes: Routes = [
   { path: '', component: ChennaiComponent },
@@ -34,6 +35,7 @@ const routes: Routes = [
   { path: 'nagapattinam', component: NagapattinamComponent },
   { path: 'dindigul', component: DindigulComponent },
   { path: 'thoothukudi', component: ThoothukudiComponent },
+  { path: 'ariyalur', component: AriyalurComponent }
 ];
 
 @NgModule({

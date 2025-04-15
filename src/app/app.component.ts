@@ -10,10 +10,10 @@ export class AppComponent {
   isFav: boolean = false;
   public darkMode: boolean = false;
   
- myFunction() {
-  var element = document.body;
-  element.dataset['bsTheme'] = element.dataset['bsTheme'] =="light" ?  "dark" : "light";  
-  }
+//  myFunction() {
+//   var element = document.body;
+//   element.dataset['bsTheme'] = element.dataset['bsTheme'] =="light" ?  "dark" : "light";  
+//   }
 
   onClick(){
     this.isFav = !this.isFav

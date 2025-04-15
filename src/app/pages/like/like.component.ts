@@ -32,6 +32,7 @@ export class LikeComponent implements OnInit {
   thiruvannamalaiplaces: Place[] = [];
   velloreplaces: Place[] = [];
   thoothukudiplaces: Place[] = [];
+  ariyalurplaces: Place[]= []
 
   ngOnInit(): void {
     this.chennaiplaces = this.placesService.ChennaiPlace();
@@ -47,6 +48,7 @@ export class LikeComponent implements OnInit {
     this.thiruvannamalaiplaces = this.placesService.ThiruvannamalaiPlace();
     this.velloreplaces = this.placesService.VellorePlace();
     this.thoothukudiplaces = this.placesService.ThoothukudiPlace();
+    this.ariyalurplaces = this.placesService.AriyalurPlace();
 
     this.places = this.chennaiplaces.concat(
       this.kanchipuramplaces,
@@ -61,6 +63,7 @@ export class LikeComponent implements OnInit {
       this.thiruvannamalaiplaces,
       this.velloreplaces,
       this.thoothukudiplaces,
+      this.ariyalurplaces,
     );
     this.getNumbersFromLocalStorage();
     this.getdata();

@@ -8,15 +8,14 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { Router, RouterModule, Routes } from '@angular/router';
 import { PlacesModule } from './places/places.module';
 import { KanchipuramComponent } from './pages/kanchipuram/kanchipuram.component';
-import { VelloreComponent } from './vellore/vellore.component';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { ThiruvannamalaiComponent } from './pages/thiruvannamalai/thiruvannamalai.component';
 import { MatIconModule } from '@angular/material/icon';
 import { VelloreV1Component } from './pages/vellore-v1/vellore-v1.component';
 import { NilgiriComponent } from './pages/nilgiri/nilgiri.component';
+import { AriyalurComponent } from './pages/ariyalur/ariyalur.component';
 
 // import { LikeComponent } from './like/like.component';
 
@@ -28,10 +27,10 @@ import { NilgiriComponent } from './pages/nilgiri/nilgiri.component';
   declarations: [
     AppComponent,
     KanchipuramComponent,
-    VelloreComponent,
     ThiruvannamalaiComponent,
     VelloreV1Component,
     NilgiriComponent,
+    AriyalurComponent,
   ],
   imports: [
     BrowserModule,

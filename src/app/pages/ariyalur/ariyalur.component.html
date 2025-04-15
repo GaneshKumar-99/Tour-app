@@ -1,0 +1,33 @@
+<div class="container-fluid">
+  <div class="row my-1">
+    <div
+      *ngFor="let place of places"
+      class="col-12 com-sm-12 col-md-6 col-lg-3"
+    >
+      <div class="card my-1 border-secondary shadow">
+        <img
+          class="card-img-top dark-mode-img"
+          [src]="place.img"
+          [alt]="place.altname"
+        />
+        <div class="card-body content-text">
+          <div class="card-title content-title">
+            <h6>{{ place.title }}</h6>
+          </div>
+          <div class="card-text" style="font-size: 13px">
+            <p>{{ place.text }}</p>
+          </div>
+          <button
+           class="btn mx-1" 
+           [ngClass]="{
+            'btn-outline-danger' : !place.isLiked,
+            'btn-danger' : place.isLiked
+           }"
+           (click)="likedPlaces(place)"
+           >Like</button>
+          <button class="btn btn-outline-success">Share</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
